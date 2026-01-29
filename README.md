@@ -152,6 +152,20 @@ This demonstrates stateful agent behavior and adaptive decision-making
 without relying on external AI services.
 
 
+## Local LLM Integration (Ollama)
+
+The mock generator was replaced with a local large language model
+using Ollama and the Mistral model.
+
+This enables:
+- Fully offline execution
+- Zero API cost
+- LLM-agnostic agent architecture
+
+The generator can be swapped between local or cloud LLMs
+without changing agent logic.
+
+
 ## Author
 
 **Priyanka Wandhare**
