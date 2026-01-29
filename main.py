@@ -3,15 +3,20 @@ from agent.generator import generate
 from agent.reviewer import review
 from memory.store import save
 
-if __name__ == "__main__":
+
+def main_agent_run(auto_approve=False):
     topic = decide_topic()
     post = generate(topic)
 
     print("\nGenerated Post:\n")
     print(post)
 
-    if review(post):
+    if review(post, auto_approve=auto_approve):
         save(post)
-        print("\nPost approved and stored.")
+        print("\nPost stored.")
     else:
         print("\nPost rejected.")
+
+
+if __name__ == "__main__":
+    main_agent_run(auto_approve=False)
