@@ -143,6 +143,14 @@ python main.py
 Follow the prompt to approve or reject generated posts.
 
 ---
+## Memory-Aware Planning
+
+The planner agent reads past approved topics from persistent memory
+and avoids repeating them in future runs.
+
+This demonstrates stateful agent behavior and adaptive decision-making
+without relying on external AI services.
+
 
 ## Author
 

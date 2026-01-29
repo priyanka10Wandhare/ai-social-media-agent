@@ -12,8 +12,8 @@ def main_agent_run(auto_approve=False):
     print(post)
 
     if review(post, auto_approve=auto_approve):
-        save(post)
-        print("\nPost stored.")
+        save(post, topic)
+        print(f"\nPost stored. Topic saved: {topic}")
     else:
         print("\nPost rejected.")
 

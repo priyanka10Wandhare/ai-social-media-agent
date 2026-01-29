@@ -4,8 +4,9 @@ def generate(topic):
 
 Topic: {topic}
 
-Agents help automate workflows
-while keeping humans in the loop.
+Agents can make decisions,
+use memory, and act autonomously
+while keeping humans in control.
 
 #AI #Agents
 """
